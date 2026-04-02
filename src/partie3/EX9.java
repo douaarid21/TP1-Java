@@ -13,7 +13,7 @@ public class EX9 {
                 somme += m[i][j];
             }
         }
-
+        sc.close();
         System.out.println("Somme = " + somme);
     }
 }

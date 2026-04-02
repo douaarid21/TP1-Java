@@ -19,6 +19,7 @@ public class EX10 {
                 System.out.print(m[j][i] + " ");
             }
             System.out.println();
+            sc.close();
         }
     }
 }

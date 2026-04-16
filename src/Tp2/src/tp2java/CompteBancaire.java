@@ -1,4 +1,4 @@
-package tp2java;
+package Tp2.src.tp2java;
 // Q1:
 public class CompteBancaire {
 // Q2:

@@ -1,5 +1,4 @@
 package tp3.TP3;
-
 public class testParking extends Vehicule {
 	public static void main(String[] argv) {
 		//Qa:

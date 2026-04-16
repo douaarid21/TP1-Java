@@ -1,4 +1,4 @@
-package tp2java;
+package Tp2.src.tp2java;
 //Q1:
 public class Banque {
 	private String nom;
@@ -7,7 +7,7 @@ public class Banque {
     
 // Q2:
     public Banque(String nom, int capacite) {
-        this.nom = nom;
+        this.setNom(nom);
         this.comptes = new CompteBancaire[capacite];
         this.nbActuels = 0;
     }
@@ -26,4 +26,12 @@ public class Banque {
             comptes[i].afficher();
         }
     }
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 }

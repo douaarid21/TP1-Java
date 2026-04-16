@@ -1,12 +1,9 @@
 package tp3.TP3;
-
 	public class Moto extends Vehicule{
 		private boolean avecCasque;
 	
-		public Moto() {
+		public Moto() {}
 		
-		}
-	
 		 public Moto(String matricule, String marque, boolean avecCasque) {
 		        super(matricule, marque);
 		        this.avecCasque = avecCasque;

@@ -18,5 +18,4 @@ public class Vehicule {
 	public void afficher() {
 		System.out.println("Matricule:"+matricule+",Marque:"+marque+".");
 	}
-	
 }

@@ -6,18 +6,15 @@ public class Etudiant {
 	protected int Id;
 	protected String Nom;
 	protected double Moyenne;
-	
 	public Etudiant(int Id, String Nom, double Moyenne) {
 		this.Id= Id;
 		this.Nom= Nom;
 		this.Moyenne=Moyenne;
 	}
-
 	@Override
 	public String toString() {		
 		return "ID: " + Id + " Nom: " + Nom + " Moyenne: " + Moyenne ;
 	}
-
 	public static void main(String[] args) {
     ArrayList<Etudiant> liste = new ArrayList<>();
     //1
@@ -53,7 +50,6 @@ public class Etudiant {
     for (Etudiant e : liste) {
         System.out.println(e);
     }
-    
     //6
     Etudiant meilleur = Collections.max(liste, Comparator.comparingDouble(e -> e.Moyenne));
 

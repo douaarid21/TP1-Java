@@ -21,16 +21,12 @@ public class Gestionlocale {
 	    return 0; 
 	}
 	public static void main(String[] args) {
-
-	    // Cas 1 : valeur correcte
 	    double m1 = lireMontant("150.5");
 	    System.out.println("Montant 1 : " + m1);
 
-	    // Cas 2 : valeur non numérique
 	    double m2 = lireMontant("abc");
 	    System.out.println("Montant 2 : " + m2);
 
-	    // Cas 3 : valeur négative
 	    double m3 = lireMontant("-50");
 	    System.out.println("Montant 3 : " + m3);
 	}

@@ -1,24 +1,19 @@
 package TP5;
-
 abstract class Abonnement {
     private String nom;
     private double prixBase;
     private int nbProfils;
-
     public Abonnement(String nom, double prixBase, int nbProfils) {
         this.nom = nom;
-
         if (prixBase <= 0)
             this.prixBase = 50; 
         else
             this.prixBase = prixBase;
-
         if (nbProfils <= 0)
             this.nbProfils = 1;
         else
             this.nbProfils = nbProfils;
     }
-
     public String getNom() { return nom; }
     public double getPrixBase() { return prixBase; }
     public int getNbProfils() { return nbProfils; }
@@ -30,18 +25,15 @@ abstract class Abonnement {
     public void setNbProfils(int nbProfils) {
         if (nbProfils > 0) this.nbProfils = nbProfils;
     }
-
     public boolean estPartageFamilial() {
         return nbProfils >= 3;
     }
-
     public void afficherInfos() {
         System.out.println("Nom: " + nom+
         		", Prix de base: " + prixBase+
         		", Nombre de profils: " + nbProfils+
         		", Partage familial: " + estPartageFamilial());
     }
-
     public abstract double calculerCoutMensuel();
     public abstract int calculerScoreSatisfaction();
 }
